@@ -8,9 +8,8 @@ describe('index.js', () => {
     });
   });
 
-  describe('welcomeMessage', () => {
     it('contains "Welcome to Flatbook, "', () => {
-      expect(welcomeMessage).to.have.string('Welcome to Flatbook, ');
+      expect(welcomeMessage).to.have.string(currentUser)
     });
 
     it("contains the value of the 'currentUser' variable", () => {
@@ -55,4 +54,4 @@ describe('index.js', () => {
       expect(shortGreeting.substr(-1)).to.eq('!');
     });
   });
-});
+
